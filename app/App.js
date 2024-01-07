@@ -31,7 +31,7 @@ export default function App() {
   useEffect(() => {
     async function prepare() {
       try {
-        const response = await fetch(`http://192.168.0.109:3000`);
+        const response = await fetch(`https://lexizadvice.cyclic.app`);
         const data = await response.json();
         setAdvice(data.slip);
 
@@ -48,7 +48,7 @@ export default function App() {
   }, [fontsLoaded]);
 
   const handlePress = async () => {
-    const response = await fetch(`http://192.168.0.109:3000`);
+    const response = await fetch(`https://lexizadvice.cyclic.app`);
     const data = await response.json();
     setAdvice(data.slip);
   };
